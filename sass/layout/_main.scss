@@ -1,0 +1,63 @@
+.main {
+  height: 100vh;
+  background: var(--light-gray);
+  padding-top: 10em;
+}
+
+.about {
+  &__photo {
+    width: 45.5rem;
+
+    @media (max-width: 600px) {
+      margin-top: 5em;
+      width: 100%;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  blockquote {
+    margin-top: 1.5em;
+    font-size: 1.3rem;
+    color: #717171;
+    text-align: center;
+  }
+}
+.how {
+  background: var(--light-gray);
+  &__desc {
+    width: 88%;
+
+    @media (max-width: 400px) {
+      width: 100% !important;
+    }
+  }
+}
+
+.inspired {
+  &__desc {
+    width: 95%;
+
+    @media (max-width: 400px) {
+      width: 100% !important;
+    }
+  }
+  .heading--3 {
+    display: inline-block;
+    margin-bottom: 1em;
+    border-bottom: 3px solid var(--secondary-color);
+  }
+}
+footer {
+  font-size: var(--paragraph);
+  background: var(--light-gray);
+  padding: 2em;
+  text-align: center;
+  p {
+    a {
+      border-bottom: 3px solid var(--secondary-color);
+      display: inline-block;
+    }
+  }
+}
